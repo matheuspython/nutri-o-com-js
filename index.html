@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Calculadora de Nutrientes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <form id="nutrition-form">
+      <label for="food-name">Nome do Alimento:</label><br>
+      <input type="text" id="food-name" name="food-name"><br>
+      <label for="food-grams">Quantidade em Gramas:</label><br>
+      <input type="text" id="food-grams" name="food-grams"><br><br>
+      <button type="submit">Obter Informações Nutricionais</button>
+    </form> 
+    
+    <div>
+      <p id="carbohydrates"></p>
+      <p id="protein"></p>
+      <p id="fat"></p>
+      <p id="calories"></p>
+    </div>
+    
+   <script src="./src/js/main.js"></script>
+  </body>
+</html>
